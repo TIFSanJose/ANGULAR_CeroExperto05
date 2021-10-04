@@ -12,6 +12,7 @@ export class AppComponent {
   PI      : number   = Math.PI;
   fecha   : Date     = new Date();  
   idioma  : string   = 'es';
+  viedoUrl: string   = 'https://www.youtube.com/embed/uEDGemguULU';
 
   xman: Object = {
     nombre    : 'Wolverine',

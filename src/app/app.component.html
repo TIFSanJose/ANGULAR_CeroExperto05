@@ -124,4 +124,24 @@
     </div>
   </div>
 
+  <h3>DOM SEGURO</h3>
+  <hr>
+  <div class="row">
+    <div class="col">
+      <iframe 
+        width="560" 
+        height="315" 
+        [src]="viedoUrl | domseguro" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; 
+              autoplay; 
+              clipboard-write; 
+              encrypted-media; 
+              gyroscope; 
+              picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
 </div>
