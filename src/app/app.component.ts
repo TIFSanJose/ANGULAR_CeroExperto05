@@ -10,6 +10,7 @@ export class AppComponent {
   arreglo : number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   PI      : number   = Math.PI;
   fecha   : Date     = new Date();  
+  idioma  : string   = 'es';
 
   xman: Object = {
     nombre    : 'Wolverine',
@@ -26,4 +27,21 @@ export class AppComponent {
       resolve('llego la data');
     }, 4500)
   })
+
+  cambiarIdioma( idioma : string){
+    switch (idioma) {
+      case idioma: 'fr'
+        this.idioma = idioma;
+        break;
+
+      case idioma: 'en'
+        this.idioma = idioma;
+        break;
+      
+      default: 
+        this.idioma = 'es';
+        break;
+    }
+  }
+
 }

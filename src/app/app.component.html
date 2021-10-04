@@ -82,8 +82,19 @@
           <td>{{ fecha | date:'MMMM-dd-y' }}</td>
         </tr>
 
+        <tr>
+          <td>{{ fecha }}</td>
+          <td> 
+              date:'MMMM-dd-y:'':'{{ idioma }}''
+              <hr>
+              <button (click)="cambiarIdioma('es')" class="btn btn-primary me-1"> Espanol </button>
+              <button (click)="cambiarIdioma('en')" class="btn btn-success me-1"> Ingles </button>
+              <button (click)="cambiarIdioma('fr')" class="btn btn-danger me-1"> Frances </button>
+          </td>
+          <td>{{ fecha | date:'MMMM-dd-y':'':idioma  }}</td>
+        </tr>
 
-      </tbody>
+      </tbody>  
     </table>
 
   </div>  
